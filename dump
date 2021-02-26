@@ -1,0 +1,3 @@
+#!/bin/bash
+
+mosquitto_pub -h 192.168.2.6 -u hass -P hass -t tmon/dump -m 1
