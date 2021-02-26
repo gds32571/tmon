@@ -22,3 +22,5 @@ Added runtime to screen output.
 
 Program now also subscribes to admin topic tmon/dump. If you send an MQTT message to this topic, tmon will dump currently recorded data to a disk file, and keep running. Filename will be some permutation of the main topic and the date and time.
 Example: for main topic rtl433/# you get filename rtl433-#-20190701-110442.dat
+
+Can be configured to vary subscribe topics based on which host runs the program.  On my rp1 computer, this program monitors Sonoff switches (which use MQTT) instead of rtl433 data..
