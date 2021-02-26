@@ -20,5 +20,5 @@ This allows you to see if any of your Acurite sensors are flaky or are having tr
 
 Added runtime to screen output.
 
-Program now also subscribes to admin topic tmon/dump. If you send MQTT message to this topic, tmon will dump currently recorded data to a disk file, and keep running. Filename will be some permutation of the main topic and the date and time.
+Program now also subscribes to admin topic tmon/dump. If you send an MQTT message to this topic, tmon will dump currently recorded data to a disk file, and keep running. Filename will be some permutation of the main topic and the date and time.
 Example: for main topic rtl433/# you get filename rtl433-#-20190701-110442.dat
