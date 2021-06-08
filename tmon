@@ -28,6 +28,9 @@ else:
    sleepval = 30    
 
 
+# period of time to say "it's late!"
+myTimeout =  280
+
 #import pdb
 import paho.mqtt.publish as publish
 import paho.mqtt.client as mqtt
@@ -183,8 +186,7 @@ while(True):
             if (now - a[b][1]) > a[b][2]:
                a[b][2] = round(now-a[b][1],1)
 
-#            if (now-a[b][1] ) > 180:
-            if (now-a[b][1] ) > 240:
+            if (now-a[b][1] ) > myTimeout:
                a[b][3] = a[b][3] + 1
    
    except KeyboardInterrupt:
